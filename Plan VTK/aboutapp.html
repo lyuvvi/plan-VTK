@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plan VTK</title>
+    <script defer src="/src/js/app.js"></script>
+    <link rel="stylesheet" href="/src/style/main.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <link rel="icon" type="image/png" href="/favicon (1).ico" />
+</head>
+
+<body id="main">
+    <header class="header" id="header">
+        <div class="header__container container">
+            <div class="header__inner">
+                <div class="header__left">
+                    <span class="menu__button" onclick="openNav()"><i class='bx bx-menu'></i></span>
+                    <div class="header__logo">
+                        <a class="logo" href="index.html"><i class='bx bx-notepad'></i>Plan VTK</a>
+                    </div>
+                </div>
+                <div id="mySidenav" class="sidenav">
+                    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+                    <div class="sidenav__user">
+                        <div class="sidenav__user-info">
+                            <div class="header__personalaccount">
+                                <img class="header__user" src="/src/assets/images/photo_2023-01-18_21-50-46.jpg" alt="">
+                            </div>
+                            <div class="sidenav__user-info_text">
+                                <p class="user-info__name">Любовь</p>
+                                <p class="user-info__nickname">lyuvvi</p>
+                            </div>
+                        </div>
+                        <button class="settings"><i class='bx bxs-cog btnbx'></i><span></span> Настройки</button>
+                    </div>
+                    <div class="sidenav__calendar">
+                        <button class="calendar__today"><i class='bx bxs-calendar btnbxs'></i>Суббота, 4 марта</button>
+                        <div class="calendars__todo">
+                            <button class="todays"><i class='bx bx-calendar-star btnbx'></i>Сегодня</button>
+                            <button class="calendar__todo"><i class='bx bx-collection btnbx'></i>Все задачи</button>
+                        </div>
+                    </div>
+                    <div class="sidenav__workspaces">
+                        <div class="dropdown">
+                            <button onclick="myFunction()" class="dropbtn"><i
+                                    class='bx bx-folder btnbxs'></i>Пространства</button>
+                            <div id="myDropdown" class="dropdown-content">
+                                <div class="dropdowns">
+                                    <button onclick="myFunction1()" class="dropbtns"><i
+                                            class='bx bxs-briefcase-alt-2'></i>Работа</button>
+                                    <div id="myDropdowns" class="dropdown-contents">
+                                        <button class="workspaces__li"><i class='bx bx-edit-alt'></i>Цели</button>
+                                        <button class="workspaces__li"><i class='bx bx-edit-alt'></i></i>Планы</button>
+                                    </div>
+                                </div>
+                                <div class="dropdownss">
+                                    <button onclick="myFunction2()" class="dropbtnss"><i
+                                            class='bx bxs-face'></i>Личное</button>
+                                    <div id="myDropdownss" class="dropdown-contentss">
+                                        <button class="workspaces__lis"><i class='bx bx-edit-alt'></i>Цели</button>
+                                        <button class="workspaces__lis"><i class='bx bx-edit-alt'></i></i>Планы</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="photo__user"><img class="user" src="/src/assets/images/photo_2023-01-18_21-50-46.jpg"
+                        alt=""></button>
+            </div>
+        </div>
+    </header>
+    <main class="main-content container">
+        <div class="container">
+            <div class="main-content__aboutapp">О приложении</div>
+        </div>
+        <div class="main-content__header">
+            <div class="main-content__header_h1">
+                Здравствуйте! Данный планер создан в целях планирования не только
+                рабочим, но и личным временем преподавателя!
+            </div>
+            <div class="main-content__header_h2">
+                Идея разработки пришла преподавателем Волгоградского технологического
+                колледжа, для разработки Выпускной квалификационнной работы.
+            </div>
+        </div>
+        <div class="main-content__body">
+            <div class="main-content__left">
+                <div class="main-content__body_functions">
+                    <div class="main-content__body_h1">В возможности планера входят следующие функции:</div>
+                    <div class="body_finctions-text"><img class="function__text" src="/src/assets/images/copybook.png"
+                            alt="">Вносить свои
+                        задачи и отмечать их в процессе выполнения</div>
+                    <div class="body_finctions-text"><img class="function__text" src="/src/assets/images/copybook.png"
+                            alt="">Просматривать
+                        свои цели, планы и задачи в календаре</div>
+                    <div class="body_finctions-text"><img class="function__text" src="/src/assets/images/copybook.png"
+                            alt="">Прописывать свои
+                        цели и отмечать их, когда достигните</div>
+                    <div class="body_finctions-text"><img class="function__text" src="/src/assets/images/copybook.png"
+                            alt="">Оставлять важные
+                        заметки, а не писать под попавшейся первой бумажке, чтобы позже потерять</div>
+                    <div class="body_finctions-text"><img class="function__text" src="/src/assets/images/copybook.png"
+                            alt="">Фиксировать свои
+                        цели в трекере привычек и отмечать регулярность ее выполнения</div>
+                </div>
+                <div class="main-content__body_h2">
+                    Не можете совмещать рабочие и личные задачи? Не переживайте!
+                    Возможность планера позволяет разделить Ваши задачи по простарнствам, которые можно создавать
+                    самостоятельно!
+                </div>
+                <div class="main-content__body_h3">Plan “VTK” - это Ваша возможность фиксировать всё самое важное в
+                    одном месте!</div>
+                <div class="main-content__body_h4">Ваш личный планер в кармане!</div>
+                <div class="main-content__body_h5">Все изображения взяты <a href="https://ru.freepik.com">Freepik.</a>
+                </div>
+                <div class="main-content__body_h6">Планер разработали: Гайдаш Любовь и Байбула Владимир.</div>
+            </div>
+            <div class="main-content__right">
+                <img class="photo" src="/src/assets/images/девушка.png" alt="">
+            </div>
+        </div>
+        <div class="main-content__footer">
+                <div class="main-content__footer_h1">Более подробную работу Вы можете просмотреть в Справочнике планера.
+                </div>
+                <div class="main-content__footer_h2">© Все права защищены. Plan VTK, 2023</div>
+        </div>
+    </main>
+
+    <button id="select" onclick="darkLight()" class="darklight"><i class='bx bxs-sun'></i></button>
+    <script type="text/javascript" src="dark.js"></script>
+    <div class="button__up">
+        <a href="#"><i class='bx bxs-up-arrow-circle'></i></a>
+    </div>
+</body>
+
+</html>
