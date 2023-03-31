@@ -65,6 +65,14 @@ ul {
   list-style: none;
 }
 
+.container {
+  
+  margin: 0 auto;
+  box-sizing: border-box;
+  flex: 1 0 auto;
+  align-items: center;
+}
+
 /* Шапка */
 .header {
   display: flex;
@@ -179,7 +187,7 @@ ul {
 
 .registration__button {
   background-color: #3F72AF;
-  color: #fff;
+  color: white;
   border: none;
   height: 40px;
   width: 450px;
@@ -199,7 +207,7 @@ ul {
 }
 
 .registration__offer {
-  color: #000;
+  color: black;
   font-size: 10px;
   text-align: center;
   margin-bottom: 5px;
@@ -214,7 +222,7 @@ ul {
 
 .registration__input {
   background-color: #DBE2EF;
-  color: #000;
+  color: black;
   border: none;
   height: 100%;
   width: 100%;
@@ -280,7 +288,7 @@ ul {
 
   .registration__button {
     background-color: #3F72AF;
-    color: #fff;
+    color: white;
     border: none;
     height: 40px;
     width: 450px;
@@ -300,7 +308,7 @@ ul {
   }
 
   .registration__offer {
-    color: #000;
+    color: black;
     font-size: 10px;
     text-align: center;
     margin-bottom: 5px;
@@ -315,7 +323,7 @@ ul {
 
   .registration__input {
     background-color: #DBE2EF;
-    color: #000;
+    color: black;
     border: none;
     height: 40px;
     width: 450px;
@@ -340,7 +348,7 @@ ul {
   overflow-x: hidden;
   transition: 0.5s;
   background: #F9F7F7;
-  color: #000;
+  color: black;
 }
 
 .sidenav a {
@@ -520,7 +528,7 @@ ul {
 
 .dropbtns {
   background-color: transparent;
-  color: #000;
+  color: black;
   font-size: 25px;
   border: none;
   cursor: pointer;
@@ -545,7 +553,7 @@ ul {
 
 .dropbtnss {
   background-color: transparent;
-  color: #000;
+  color: black;
   font-size: 25px;
   border: none;
   cursor: pointer;

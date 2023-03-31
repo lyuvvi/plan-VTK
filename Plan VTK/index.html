@@ -78,7 +78,37 @@
     </header>
     <main class="main-content container">
         <div class="container">
-          
+            <div class="sidenav__calendar">
+                <button class="calendar__today"><i class='bx bxs-calendar btnbxs'></i>Суббота, 4 марта</button>
+                <div class="calendars__todo">
+                    <button class="todays"><i class='bx bx-calendar-star btnbx'></i>Сегодня</button>
+                    <button class="calendar__todo"><i class='bx bx-collection btnbx'></i>Все задачи</button>
+                </div>
+            </div>
+            <div class="sidenav__workspaces">
+                <div class="dropdown">
+                    <button onclick="myFunction()" class="dropbtn"><i
+                            class='bx bx-folder btnbxs'></i>Пространства</button>
+                    <div id="myDropdown" class="dropdown-content">
+                        <div class="dropdowns">
+                            <button onclick="myFunction1()" class="dropbtns"><i
+                                    class='bx bxs-briefcase-alt-2'></i>Работа</button>
+                            <div id="myDropdowns" class="dropdown-contents">
+                                <button class="workspaces__li"><i class='bx bx-edit-alt'></i>Цели</button>
+                                <button class="workspaces__li"><i class='bx bx-edit-alt'></i></i>Планы</button>
+                            </div>
+                        </div>
+                        <div class="dropdownss">
+                            <button onclick="myFunction2()" class="dropbtnss"><i
+                                    class='bx bxs-face'></i>Личное</button>
+                            <div id="myDropdownss" class="dropdown-contentss">
+                                <button class="workspaces__lis"><i class='bx bx-edit-alt'></i>Цели</button>
+                                <button class="workspaces__lis"><i class='bx bx-edit-alt'></i></i>Планы</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </main>
 
