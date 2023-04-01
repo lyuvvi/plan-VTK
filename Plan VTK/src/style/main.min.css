@@ -447,6 +447,7 @@ ul {
   margin-bottom: 20px;
   justify-content: center;
   display: flex;
+  cursor: pointer;
 }
 
 .todays {
@@ -676,4 +677,165 @@ ul {
 .main-content__footer_h1 {
   font-style: italic;
   margin-bottom: 20px;
+}
+
+/* Страница Справочник */
+.main-content__guide {
+  font-size: 40px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.main-content__work {
+  
+}
+
+.calendar__today {
+  font-size: 25px;
+  border: none;
+  background-color: transparent;
+  width: 250px;
+  height: 25px;
+  margin-bottom: 20px;
+  justify-content: center;
+  display: flex;
+  cursor: pointer;
+}
+
+.dropbttn {
+  background-color: transparent;
+  color: black;
+  font-size: 25px;
+  border: none;
+  cursor: pointer;
+  padding: 20px;
+}
+
+.dropdowwn {
+  position: relative;
+  display: inline-block;
+  margin-top: 220px;
+}
+
+.dropdowwn-content {
+  display: none;
+  position: absolute;
+  padding-left: 40px;
+}
+
+.show {
+  display: flex;
+  flex-direction: column;
+}
+
+.sidenav__notes {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+
+.notes {
+  font-size: 25px;
+  border: none;
+  background-color: transparent;
+  width: 250px;
+  height: 25px;
+  margin-bottom: 20px;
+  display: flex;
+  cursor: pointer;
+}
+
+.note {
+  font-size: 20px;
+  border: none;
+  background-color: transparent;
+  width: 350px;
+  height: 25px;
+  margin-bottom: 20px;
+  display: flex;
+  cursor: pointer;
+  padding-left: 20px;
+}
+
+.sidenav__tracker {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+
+.trackers {
+  font-size: 25px;
+  border: none;
+  background-color: transparent;
+  width: 250px;
+  height: 25px;
+  margin-bottom: 20px;
+  display: flex;
+  cursor: pointer;
+}
+
+.track {
+  font-size: 20px;
+  border: none;
+  background-color: transparent;
+  width: 350px;
+  height: 25px;
+  margin-bottom: 20px;
+  display: flex;
+  cursor: pointer;
+  padding-left: 20px;
+}
+
+
+.sidenav__exit {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  border-top: 1px solid #9D9B9B;
+  border-bottom: 1px solid #9D9B9B;
+  height: 70px;
+}
+
+.exit {
+  font-size: 25px;
+  border: none;
+  background-color: transparent;
+  width: 250px;
+  height: 25px;
+  margin-bottom: 20px;
+  display: flex;
+  cursor: pointer;
+}
+
+.sidenav__setting {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+
+.question {
+  font-size: 25px;
+  border: none;
+  background-color: transparent;
+  width: 250px;
+  height: 25px;
+  margin-bottom: 20px;
+  display: flex;
+  cursor: pointer;
+}
+
+.app {
+  font-size: 25px;
+  border: none;
+  background-color: transparent;
+  width: 250px;
+  height: 25px;
+  margin-bottom: 20px;
+  display: flex;
+  cursor: pointer;
+  margin-top: 10px;
 }

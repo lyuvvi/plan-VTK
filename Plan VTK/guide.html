@@ -37,7 +37,7 @@
                         <button class="settings"><i class='bx bxs-cog btnbx'></i><span></span> Настройки</button>
                     </div>
                     <div class="sidenav__calendar">
-                        <button class="calendar__today"><i class='bx bxs-calendar btnbxs'></i>Суббота, 4 марта</button>
+                        <button onclick="window.location.href = 'calendar.html';" class="calendar__today"><i class='bx bxs-calendar btnbxs'></i>Суббота, 4 марта</button>
                         <div class="calendars__todo">
                             <button class="todays"><i class='bx bx-calendar-star btnbx'></i>Сегодня</button>
                             <button class="calendar__todo"><i class='bx bx-collection btnbx'></i>Все задачи</button>
@@ -67,6 +67,36 @@
                             </div>
                         </div>
                     </div>
+                    <div class="sidenav__category">
+                        <div class="dropdowwn">
+                            <button onclick="myFunction3()" class="dropbttn"><i class='bx bxs-category btnbxs'></i>Категории</button>
+                            <div id="myDropdowwn" class="dropdowwn-content">
+                                <li class="">Работа</li>
+                                <li class="">Личное</li>
+                                <li class="">Дом</li>
+                                <li class="">Прочее</li>
+                                <li class="">Важное</li>
+                                <li class="">Рутина</li>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sidenav__notes">
+                        <button class="notes"><i class='bx bx-clipboard'></i>Заметки</button>
+                        <button class="note"><i class='bx bx-pencil'></i>Создать новую заметку</button>
+                    </div>
+                    <div class="sidenav__tracker">
+                        <button class="trackers"><i class='bx bx-check-double'></i>Трекер привычек</button>
+                        <button class="track"><i class='bx bx-dumbbell' ></i>Спорт</button>
+                        <button class="track"><i class='bx bx-water'></i>Вода</button>
+                        <button class="track"><i class='bx bxs-time'></i>Режим сна</button>
+                    </div>
+                    <div class="sidenav__exit">
+                        <button class="exit"><i class='bx bx-exit' ></i>Выход</button>
+                    </div>
+                    <div class="sidenav__setting">
+                        <button class="question"><i class='bx bx-question-mark'></i>Справочник</button>
+                        <button class="app"><i class='bx bx-error-alt'></i>О приложении</button>
+                    </div>
                 </div>
                 <button class="photo__user"><img class="user" src="/src/assets/images/photo_2023-01-18_21-50-46.jpg"
                         alt=""></button>
@@ -74,9 +104,7 @@
         </div>
     </header>
     <main class="main-content">
-        <div class="container">
-            <div class="main-content__aboutapp">Справочник</div>
-        </div>
+            <div class="main-content__guide">Справочник</div>
         <div class="main-content__header">
             <div class="main-content__header_h1">
                 Данный раздел создан для того, чтобы понять принцип работы планера и узнать некоторые фишки и горячие
