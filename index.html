@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plan VTK</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./src/style/main.min.css">
+    <script defer src="./src/js/app.js"></script>
+    <link rel="icon" type="image/png" href="/favicon.ico" />
+</head>
+
+<body>
+    <header class="header" id="header">
+        <div class="header__container container-fluid">
+            <div class="header__inner">
+                <div class="header__left">
+                    <span class="menu__button" onclick="openNav()"><i class='bx bx-menu'></i></span>
+                    <a href="/index.html" class="header__logo logo">
+                        <i class='bx bx-notepad'></i>Plan VTK</a>
+                    </a>
+                </div>
+                <button type="button" class="header__menu-btn menu-btn" id="menu-btn">
+                    <i class='bx bx-menu'></i>
+                </button>
+                <nav class="header__navbar navbar" data-navbar="false">
+
+                </nav>
+                <ul class="header__actions header-actions">
+                    <div id="mySidenav" class="sidenav">
+                        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+                        <div class="sidenav__user">
+                            <div class="sidenav__user-info">
+                                <div class="header__personalaccount">
+                                    <img class="header__user" src="/src/assets/images/photo_2023-01-18_21-50-46.jpg"
+                                        alt="">
+                                </div>
+                                <div class="sidenav__user-info_text">
+                                    <p class="user-info__name">Любовь</p>
+                                    <p class="user-info__nickname">lyuvvi</p>
+                                </div>
+                            </div>
+                            <button onclick="window.location.href = 'settings.html'" class="settings"><i
+                                    class='bx bxs-cog btnbx'></i><span></span> Настройки</button>
+                        </div>
+                        <div class="sidenav__calendar">
+                            <button onclick="window.location.href = 'calendar.html';" class="calendar__today"><i
+                                    class='bx bxs-calendar btnbxs'></i>Суббота, 4 марта</button>
+                            <div class="calendars__todo">
+                                <button onclick="window.location.href = 'index.html'" class="todays"><i
+                                        class='bx bx-calendar-star btnbx'></i>Сегодня</button>
+                                <button onclick="window.location.href = 'alltasks.html'" class="calendar__todo"><i
+                                        class='bx bx-collection btnbx'></i>Все задачи</button>
+                            </div>
+                        </div>
+                        <div class="sidenav__workspaces">
+                            <details>
+                                <summary><i class='bx bx-folder btnbxs'></i>Пространства</summary>
+                                <details>
+                                    <summary><i class='bx bxs-face'></i>Личное</summary>
+                                    <div class="user">
+                                        <button onclick="window.location.href = 'goals.html'" class="workspaces__lis"><i
+                                                class='bx bx-edit-alt'></i>Цели</button>
+
+                                        <button onclick="window.location.href = 'alltasks.html'"
+                                            class="workspaces__lis"><i class='bx bx-edit-alt'></i></i>Планы</button>
+                                    </div>
+                                </details><br><br><br><br><br>
+                                <details>
+                                    <summary><i class='bx bxs-briefcase-alt-2'></i>Работа</summary>
+                                    <div class="work">
+                                        <button onclick="window.location.href = 'goals.html'" class="workspaces__li"><i
+                                                class='bx bx-edit-alt'></i>Цели</button>
+                                        <button onclick="window.location.href = 'alltasks.html'"
+                                            class="workspaces__li"><i class='bx bx-edit-alt'></i></i>Планы</button>
+                                    </div>
+                                </details>
+                            </details>
+                        </div>
+                        <div class="sidenav__category">
+                            <details>
+                                <summary><i class='bx bxs-category btnbxs'></i>Категории</summary>
+                                <li class="">Работа</li>
+                                <li class="">Личное</li>
+                                <li class="">Дом</li>
+                                <li class="">Прочее</li>
+                                <li class="">Важное</li>
+                                <li class="">Рутина</li>
+                            </details>
+                        </div>
+                        <div class="sidenav__notes">
+                            <button onclick="window.location.href = 'notes.html'" class="notes"><i
+                                    class='bx bx-clipboard'></i>Заметки</button>
+                            <button class="note"><i class='bx bx-pencil'></i>Создать новую заметку</button>
+                        </div>
+                        <div class="sidenav__tracker">
+                            <button onclick="window.location.href = 'habitstracker.html'" class="trackers"><i
+                                    class='bx bx-check-double'></i>Трекер привычек</button>
+                            <button class="track"><i class='bx bx-dumbbell'></i>Спорт</button>
+                            <button class="track"><i class='bx bx-water'></i>Вода</button>
+                            <button class="track"><i class='bx bxs-time'></i>Режим сна</button>
+                        </div>
+                        <div class="sidenav__exit">
+                            <button class="exit"><i class='bx bx-exit'></i>Выход</button>
+                        </div>
+                        <div class="sidenav__setting">
+                            <button onclick="window.location.href = 'guide.html'" class="question"><i
+                                    class='bx bx-question-mark'></i>Справочник</button>
+                            <button onclick="window.location.href = 'aboutapp.html'" class="app"><i
+                                    class='bx bx-error-alt'></i>О приложении</button>
+                        </div>
+                    </div>
+                    <button class="photo__user"><img class="user" src="/src/assets/images/photo_2023-01-18_21-50-46.jpg"
+                            alt=""></button>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <main class="main-content">
+        <div class="main-content__container container">
+            <div class="main-content__grid">
+                <aside class="sidebar" id="sidebar">
+                    <div class="sidebar__container">
+                        <div class="sidenav__calendar">
+                            <button onclick="window.location.href = 'calendar.html';" class="calendar__today"><i
+                                    class='bx bxs-calendar btnbxs'></i>Суббота, 4 марта</button>
+                            <div class="calendars__todo">
+                                <button onclick="window.location.href = 'index.html'" class="todays"><i
+                                        class='bx bx-calendar-star btnbx'></i>Сегодня</button>
+                                <button onclick="window.location.href = 'alltasks.html'" class="calendar__todo"><i
+                                        class='bx bx-collection btnbx'></i>Все задачи</button>
+                            </div>
+                        </div>
+                        <div class="sidenav__workspaces">
+                            <details>
+                                <summary><i class='bx bx-folder btnbxs'></i>Пространства</summary>
+                                <details>
+                                    <summary><i class='bx bxs-face'></i>Личное</summary>
+                                    <div class="user">
+                                        <button onclick="window.location.href = 'goals.html'" class="workspaces__lis"><i
+                                                class='bx bx-edit-alt'></i>Цели</button>
+
+                                        <button onclick="window.location.href = 'alltasks.html'"
+                                            class="workspaces__lis"><i class='bx bx-edit-alt'></i></i>Планы</button>
+                                    </div>
+                                </details><br><br><br><br><br>
+                                <details>
+                                    <summary><i class='bx bxs-briefcase-alt-2'></i>Работа</summary>
+                                    <div class="work">
+                                        <button onclick="window.location.href = 'goals.html'" class="workspaces__li"><i
+                                                class='bx bx-edit-alt'></i>Цели</button>
+                                        <button onclick="window.location.href = 'alltasks.html'"
+                                            class="workspaces__li"><i class='bx bx-edit-alt'></i></i>Планы</button>
+                                    </div>
+                                </details>
+                            </details>
+                        </div>
+                        <div class="sidenav__category">
+                            <details>
+                                <summary><i class='bx bxs-category btnbxs'></i>Категории</summary>
+                                <li class="">Работа</li>
+                                <li class="">Личное</li>
+                                <li class="">Дом</li>
+                                <li class="">Прочее</li>
+                                <li class="">Важное</li>
+                                <li class="">Рутина</li>
+                            </details>
+                        </div>
+                        <div class="sidenav__notes">
+                            <button onclick="window.location.href = 'notes.html'" class="notes"><i
+                                    class='bx bx-clipboard'></i>Заметки</button>
+                            <button class="note"><i class='bx bx-pencil'></i>Создать новую заметку</button>
+                        </div>
+                        <div class="sidenav__tracker">
+                            <button onclick="window.location.href = 'habitstracker.html'" class="trackers"><i
+                                    class='bx bx-check-double'></i>Трекер привычек</button>
+                            <button class="track"><i class='bx bx-dumbbell'></i>Спорт</button>
+                            <button class="track"><i class='bx bx-water'></i>Вода</button>
+                            <button class="track"><i class='bx bxs-time'></i>Режим сна</button>
+                        </div>
+                    </div>
+                </aside>
+                <section class="workspaces">
+                    <div class="workspaces__container">
+                        <h2 class="banner-section__title title-lg">Ваши запланированные задачи на сегодня</h2>
+                        <div class="workspaces-section__list">
+                            <div class="list__todo">
+                                <input type="checkbox" class="check">
+                                <div class="todo__body">
+                                    <div class="body-todo">
+                                        <p class="todo__name">Написать главу диплома</p>
+                                        <div class="todo__days">
+                                            <p class="todo__date">Сегодня</p>
+                                            <p class="todo_time">до 21:00</p>
+                                        </div>
+                                    </div>
+                                    <p class="category">Работа/Важное</p>
+                                </div>
+                            </div>
+                            <div class="list__todo">
+                                <input type="checkbox" class="check">
+                                <div class="todo__body">
+                                    <div class="body-todo">
+                                        <p class="todo__name">Написать главу диплома</p>
+                                        <div class="todo__days">
+                                            <p class="todo__date">Сегодня</p>
+                                            <p class="todo_time">до 21:00</p>
+                                        </div>
+                                    </div>
+                                    <p class="category">Работа/Важное</p>
+                                </div>
+                            </div>
+                            <div class="list__todo">
+                                <input type="checkbox" class="check">
+                                <div class="todo__body">
+                                    <div class="body-todo">
+                                        <p class="todo__name">Написать главу диплома</p>
+                                        <div class="todo__days">
+                                            <p class="todo__date">Сегодня</p>
+                                            <p class="todo_time">до 21:00</p>
+                                        </div>
+                                    </div>
+                                    <p class="category">Работа/Важное</p>
+                                </div>
+                            </div>
+                            <div class="list__todo">
+                                <input type="checkbox" class="check">
+                                <div class="todo__body">
+                                    <div class="body-todo">
+                                        <p class="todo__name">Написать главу диплома</p>
+                                        <div class="todo__days">
+                                            <p class="todo__date">Сегодня</p>
+                                            <p class="todo_time">до 21:00</p>
+                                        </div>
+                                    </div>
+                                    <p class="category">Работа/Важное</p>
+                                </div>
+                            </div>
+                            <div class="list__todo">
+                                <input type="checkbox" class="check">
+                                <div class="todo__body">
+                                    <div class="body-todo">
+                                        <p class="todo__name">Написать главу диплома</p>
+                                        <div class="todo__days">
+                                            <p class="todo__date">Сегодня</p>
+                                            <p class="todo_time">до 21:00</p>
+                                        </div>
+                                    </div>
+                                    <p class="category">Работа/Важное</p>
+                                </div>
+                            </div>
+                            <div class="list__todo">
+                                <input type="checkbox" class="check">
+                                <div class="todo__body">
+                                    <div class="body-todo">
+                                        <p class="todo__name">Написать главу диплома</p>
+                                        <div class="todo__days">
+                                            <p class="todo__date">Сегодня</p>
+                                            <p class="todo_time">до 21:00</p>
+                                        </div>
+                                    </div>
+                                    <p class="category">Работа/Важное</p>
+                                </div>
+                            </div>
+                            <div class="list__todo">
+                                <input type="checkbox" class="check">
+                                <div class="todo__body">
+                                    <div class="body-todo">
+                                        <p class="todo__name">Написать главу диплома</p>
+                                        <div class="todo__days">
+                                            <p class="todo__date">Сегодня</p>
+                                            <p class="todo_time">до 21:00</p>
+                                        </div>
+                                    </div>
+                                    <p class="category">Работа/Важное</p>
+                                </div>
+                            </div>
+                            <div class="list__todo">
+                                <input type="checkbox" class="check">
+                                <div class="todo__body">
+                                    <div class="body-todo">
+                                        <p class="todo__name">Написать главу диплома</p>
+                                        <div class="todo__days">
+                                            <p class="todo__date">Сегодня</p>
+                                            <p class="todo_time">до 21:00</p>
+                                        </div>
+                                    </div>
+                                    <p class="category">Работа/Важное</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+        <div class="modal fade" id="myModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Добавьте Вашу задачу</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <input type="text" class="form-control" id="title">
+                        <span id="titleError" class="text-danger"></span>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Закрыть</button>
+                        <button type="button" id="saveBtn" class="btn btn-primary">Добавить</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+        </div>
+        <div class="button__add" data-path="add"><i class='bx bx-plus-medical'></i></div>
+    </main>
+    <div class="theme-block">
+        <label for="input-checkbox" class="theme-block__label">
+            <input type="checkbox" id="input-checkbox" class="theme-block__checkbox">
+            <i class='bx bxs-moon'></i>
+        </label>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <div class="button__up">
+        <a href="#"><i class='bx bxs-up-arrow-circle'></i></a>
+    </div>
+</body>
+
+</html>

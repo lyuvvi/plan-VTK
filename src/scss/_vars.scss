@@ -1,0 +1,57 @@
+:root{
+    // colors setting
+    --main-color-white: #ffffff;
+    --main-color-black: #000000;
+    --main-color-blue: #1565C0;
+    --main-color-indigo: #283593;
+    --main-color-red: #D84315;
+    --main-color-gray-100: #f5faffb4;
+    --main-color-gray-200: #e1e6f7;
+    --main-color-gray-300: #797979;
+    --main-color-gray-400: #363636;
+    --main-color-gray-500: #2c2c2c;
+    --main-color-gray-600: #212121;
+    // container settings
+    --content-width: 1040px;
+    --container-offset: 15px;
+    --container-width: calc(var(--content-width) + (var(--container-offset) * 2));
+    // fonts settings
+    --font-size: 16px;
+    --font-light: 300;
+    --font-regular: 400;
+    --font-medium: 500;
+    --font-semibold: 600;
+    --font-bold: 700;
+    --font-family: system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue","Noto Sans","Liberation Sans",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+    // border-radius setting
+    --rounded-sm: 5px;
+    --rounded-md: 10px;
+    --rounded-xl: 15px;
+    --rounded-xxl: 20px;
+    // transitions settings
+    --transition-1: all 100ms ease-in-out;
+    --transition-2: all 200ms ease-in-out;
+    --transition-3: all 300ms ease-in-out;
+}
+[data-theme=dark]{
+    --background-white: var(--main-color-black);
+    --background-black: var(--main-color-white);
+    --background-body: var(--main-color-gray-600);
+    --background-block: var(--main-color-gray-500);
+    --background-block-secondary: var(--main-color-gray-400);
+    --color-primary: var(--main-color-red);
+    --color-text: var(--main-color-gray-200);
+    --color-text-secondary: var(--main-color-gray-300);
+    --box-shadow: 0 3px 10px rgba(0, 0, 0, 0.349);
+}
+[data-theme=light]{
+    --background-white: var(--main-color-white);
+    --background-black: var(--main-color-black);
+    --background-body: var(--main-color-gray-100);
+    --background-block: var(--main-color-white);
+    --background-block-secondary: var(--main-color-gray-200);
+    --color-primary: var(--main-color-blue);
+    --color-text: var(--main-color-gray-600);
+    --color-text-secondary: var(--main-color-gray-300);
+    --box-shadow: 0 3px 10px rgba(211, 216, 253, 0.637);
+}
